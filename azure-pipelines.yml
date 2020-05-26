@@ -16,7 +16,7 @@ steps:
   displayName: 'Use .NET Core SDK $(dotnetSdkVersion)'
   inputs:
     version: '$(dotnetSdkVersion)'
-
+  
 - task: UseDotNet@2
   displayName: 'Use .NET Core SDK 2.1.505 for SonarCloud'
   inputs:
@@ -122,6 +122,14 @@ steps:
     publishWebProjects: false
     arguments: '--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)'
     zipAfterPublish: true
+
+# - template: templates/build.yml
+#   parameters:
+#     buildConfiguration: 'Debug'
+
+# - template: templates/build.yml
+#   parameters:
+#     buildConfiguration: 'Release'
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
