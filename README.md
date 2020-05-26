@@ -1,4 +1,5 @@
 [![Build Status](https://dev.azure.com/gethhero/Space%20Game%20-%20web%20-%20Pipeline/_apis/build/status/nemuelle.mslearn-tailspin-spacegame-web?branchName=master)](https://dev.azure.com/gethhero/Space%20Game%20-%20web%20-%20Pipeline/_build/latest?definitionId=1&branchName=master)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=nemuelle_mslearn-tailspin-spacegame-web&metric=alert_status)](https://sonarcloud.io/dashboard?id=nemuelle_mslearn-tailspin-spacegame-web)
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
